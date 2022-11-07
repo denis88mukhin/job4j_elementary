@@ -26,7 +26,7 @@ class FitnessTest {
 
     @Test
     void whenIvanLessByFewNik() {
-        int ivan = 20;
+        int ivan = 50;
         int nik = 90;
         int result = Fitness.calc(ivan, nik);
         int expected = 2;
