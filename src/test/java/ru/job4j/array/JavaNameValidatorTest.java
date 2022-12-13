@@ -45,4 +45,9 @@ class JavaNameValidatorTest {
     void whenLatNumberAndTwoSpecialSymbolIsUnderValid() {
         assertThat(isNameValid("fir$t_u$er_1")).isTrue();
     }
+
+    @Test
+    void whenLatNotSpecialInvalid() {
+        assertThat(isNameValid("f!rst")).isFalse();
+    }
 }

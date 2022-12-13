@@ -10,6 +10,7 @@ public class JavaNameValidator {
                 int code = name.codePointAt(i);
                 if (!isUpperLatinLetter(code) && !isLowerLatinLetter(code) && !isSpecialSymbol(code) && !Character.isDigit(code)) {
                     valid = false;
+                    break;
                 }
             }
         }
