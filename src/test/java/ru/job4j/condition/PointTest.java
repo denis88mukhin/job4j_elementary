@@ -40,4 +40,22 @@ public class PointTest {
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void whenMinus6Minus4Minus1To233Then11point36() {
+        double expected = 11.36;
+        Point a = new Point(-6, -4, -1);
+        Point b = new Point(2, 3, 3);
+        double out = a.distance3D(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void when135To856Then7point35() {
+        double expected = 7.35;
+        Point a = new Point(1, 3, 5);
+        Point b = new Point(8, 5, 6);
+        double out = a.distance3D(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 }
