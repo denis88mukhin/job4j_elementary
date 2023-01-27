@@ -40,4 +40,78 @@ public class MaxTest {
         int result = Max.max(left, right);
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenMax7To5To10Then10() {
+        int first = 7;
+        int second = 5;
+        int third = 10;
+        int expected = 10;
+        int result = Max.max(first, second, third);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax6To0To2Then6() {
+        int first = 6;
+        int second = 0;
+        int third = 2;
+        int expected = 6;
+        int result = Max.max(first, second, third);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax6To9To2Then9() {
+        int first = 6;
+        int second = 9;
+        int third = 2;
+        int expected = 9;
+        int result = Max.max(first, second, third);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax6To9To2To15Then15() {
+        int first = 6;
+        int second = 9;
+        int third = 2;
+        int fourth = 15;
+        int expected = 15;
+        int result = Max.max(first, second, third, fourth);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax6To3To8To1Then8() {
+        int first = 6;
+        int second = 3;
+        int third = 8;
+        int fourth = 1;
+        int expected = 8;
+        int result = Max.max(first, second, third, fourth);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax14To9To2To10Then14() {
+        int first = 14;
+        int second = 9;
+        int third = 2;
+        int fourth = 10;
+        int expected = 14;
+        int result = Max.max(first, second, third, fourth);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax14To29To17To10Then29() {
+        int first = 14;
+        int second = 29;
+        int third = 17;
+        int fourth = 10;
+        int expected = 29;
+        int result = Max.max(first, second, third, fourth);
+        assertThat(result).isEqualTo(expected);
+    }
 }
